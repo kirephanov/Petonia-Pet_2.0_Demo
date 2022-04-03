@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Petonia - Поиск питомцев</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<header>
+        <div class="header">
+            <div class="wrapper">
+                <div class="header-top">
+                    <div class="header-top__logo">
+                        <a href="index.html" class="logo"><img src="images/logo.svg" alt="Petonia"></a>
+                    </div>
+                    <div class="header-top__link">
+                        <a href="#" class="header-top__link-item login">Войти</a>
+                        <a href="#" class="header-top__link-item reg">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">Карта</a>
+                </li>
+                <li class="nav-item">
+                    <a href="form.html" class="nav-link">Добавить объявление</a>
+                </li>
+                <li class="nav-item">
+                    <a href="board.html" class="nav-link">Объявления</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__ul">
+                <li class="mobile-nav__li">
+                    <a href="index.html" class="mobile-nav__link"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="mobile-nav__li">
+                    <a href="map.html" class="mobile-nav__link"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                </li>
+                <li class="mobile-nav__li">
+                    <a href="form.html" class="mobile-nav__link"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="mobile-nav__li">
+                    <a href="board.html" class="mobile-nav__link"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                </li>
+                <li class="mobile-nav__li">
+                    <a href="login-mobile.html" class="mobile-nav__link"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+	<form method="post" enctype="multipart/form-data">
+		<div class="wrapper">
+			<div class="grid-form">
+				<div class="grid-form-item">
+					<label for="" class="form-label">Категория</label>
+					<div class="form-item">
+						<select name="" id="" class="form-select">
+							<option value="">Выбрать...</option>
+							<option value="">Ищу</option>
+							<option value="">Нашел(а)</option>
+						</select>
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Питомец</label>
+					<div class="form-item">
+						<select name="" id="" class="form-select">
+							<option value="">Выбрать...</option>
+							<option value="">Кошка</option>
+							<option value="">Собака</option>
+						</select>
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Имя</label>
+					<div class="form-item">
+						<input type="text" class="form-input" placeholder="Иван">
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Телефон</label>
+					<div class="form-item">
+						<input type="text" class="form-input" placeholder="+7 123 123-45-67">
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Местоположение</label>
+					<div class="form-item">
+						<input type="text" class="form-input" placeholder="Место / Улица, дом">
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Город</label>
+					<div class="form-item">
+						<input type="text" class="form-input" placeholder="Москва">
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Область</label>
+					<div class="form-item">
+						<select name="" id="" class="form-select">
+							<option value="">Выбрать...</option>
+						</select>
+					</div>
+				</div>
+				<div class="grid-form-item">
+					<label for="" class="form-label">Страна</label>
+					<div class="form-item">
+						<input type="text" class="form-input" placeholder="Россия">
+					</div>
+				</div>
+				<div class="grid-form-item grid-form-item__textarea">
+					<label for="" class="form-label">Комментарий</label>
+					<div class="form-item">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Дополнительная информация" class="form-textarea"></textarea>
+					</div>
+				</div>
+				<div class="grid-form-item grid-form-item__file">
+					<label for="" class="form-label">Фотография</label>
+					<div class="form-item input_file">
+						 <input type="file" class="file_input">
+					</div>
+				</div>
+			</div>
+			<!-- <div class="form-error">
+				<p class="form-error__message">Ошибка</p>
+			</div> -->
+			<div class="form-btn">
+				<button class="btn-reset btn-reset__large" type="reset">Отмена</button>
+				<button class="btn-reset btn-reset__mobile" type="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
+				<button class="btn-send btn-send__large" type="submit">Отправить</button>
+				<button class="btn-send btn-send__mobile" type="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</form>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="materials">
+					<p class="footer-top__title">Материалы</p>
+					<ul class="materials-list">
+						<li class="materials-list__item">
+							<a href='https://www.freepik.com/psd/dog'>Dog psd created by rawpixel.com - www.freepik.com</a>
+						</li>
+						<li class="materials-list__item">
+							<a href='https://pngtree.com/so/A%27%3EA'> png from pngtree.com/</a>
+						</li>
+						<li class="materials-list__item">
+							<a href='https://www.freepik.com/psd/background'>Background psd created by rawpixel.com - www.freepik.com</a>
+						</li>
+						<li class="materials-list__item">
+							<a href='https://www.freepik.com/psd/background'>Background psd created by rawpixel.com - www.freepik.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="about">
+					<p class="footer-top__title">О нас</p>
+					<p class="about__description">Для вопросов и предложений обращайтесь на <span>petoniapets@mail.mail</span></p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom__text">&#169 2021 - 2022, "Petonia - Поиск питомцев"</p>
+				<div class="social">
+					<ul class="social-list">
+						<li class="social-list-item">
+							<a href="#" target="_blank" class="social-list-item__link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
